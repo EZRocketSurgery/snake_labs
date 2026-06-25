@@ -7,7 +7,7 @@ PLAYER_COLOR = (120, 220, 170)
 COIN_COLOR = (245, 202, 87)
 
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.set_caption("Tutorial Game")
+pygame.display.set_caption("snake_labs")
 
 #game setup
 

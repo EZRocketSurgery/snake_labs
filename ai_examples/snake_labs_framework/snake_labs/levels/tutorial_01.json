@@ -1,0 +1,9 @@
+{
+  "name": "Tutorial 01",
+  "cols": 12,
+  "rows": 8,
+  "tile_size": 64,
+  "robot": {"col": 1, "row": 3},
+  "reactor": {"col": 9, "row": 3},
+  "items": [{"col": 4, "row": 3, "kind": "item_cube"}]
+}

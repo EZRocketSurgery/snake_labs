@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snake_labs"
+version = "0.1.0"
+description = "A pygame framework for grid-based factory puzzle prototypes."
+readme = "readme.md"
+requires-python = ">=3.11"
+dependencies = ["pygame-ce>=2.5.0"]
+
+[project.scripts]
+snake-labs = "snake_labs.cli:main"
+
+[tool.setuptools]
+packages = ["snake_labs", "snake_labs.core", "snake_labs.engine", "snake_labs.utils"]
