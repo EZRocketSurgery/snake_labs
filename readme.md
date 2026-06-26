@@ -1,11 +1,8 @@
-So, this is going to be a factory puzzle game. We're programming little bot workers to get things done.
-It's going to be a grid based top down puzzler. We want these little guys to take ingredients to various 
-stations and make products with them.
+Welcome to snake_labs Agent! Congratulations on completing the agent_onboarding_experience!
 
-The goal is to make puzzles that challenge or teach programming. Especially when thinking algorythmically.
+If you're reading this and you haven't completed the agent_onboarding_experience, please go
+and complete it before working on any project for snake_labs. If you're reading this and
+the agent_onboarding_experience is still incomplete, please ignore that last statement and
+go develop the agent_onboarding_experience.
 
-Rules:
-- The grid stays a managable size.
-- The grid is always there
-- The puzzle is solved with programming.
-- Robots are not omniscient. The player must use and program their senses.
+Still here?
