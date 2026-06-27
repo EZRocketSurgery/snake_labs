@@ -1,6 +1,6 @@
 GOALS:
 - Make a fun game about snakes and robots in a lab
-- Study and teach Python and algorythmic thinking
+- Study and teach Python and algorithmic thinking
 - Study and teach systems thinking
 
 RULES:
@@ -9,3 +9,4 @@ RULES:
 - This is the only document that is allowed to be out of character. Yes, every line of code cannonically
 is written by an Agent of some kind.
 
+- Rectangles are described as: (left_x, top_y, width, height) in all cases.

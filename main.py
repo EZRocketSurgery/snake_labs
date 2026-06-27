@@ -17,7 +17,7 @@ while running:
 # Timekeeping
 #---------------------------------------------------
 
-    dt = pygame.time.Clock().tick(60)/1000  # Delta time in seconds
+    clock = pygame.time.Clock().tick(60)  # Delta time in seconds
 
 #---------------------------------------------------
 # Event handling
