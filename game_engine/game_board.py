@@ -1,3 +1,6 @@
+import pygame
+
+
 class GameBoard:
     """Represents a 2D grid of tiles for the game world."""
     def __init__(self, width: int, height: int, draw_area: tuple = None):
@@ -30,6 +33,19 @@ class GameBoard:
         """Sets the area of the board that should be drawn on the screen."""
         #TODO make some weird transformations to make moving tiles maybe?
         self.draw_area = (left_x, top_y, width, height)
+
+    def draw_board(game_board: "GameBoard", screen: pygame.Surface, grid_color = (40, 48, 63), board_color = (30, 36, 50)):
+        """Draws the game board on the screen using pygame."""
+        GRID_COLOR = grid_color
+        BOARD_COLOR = board_color
+        (left_x, top_y, pixel_width, pixel_height) = game_board.draw_area
+        pygame.draw.rect(screen, BOARD_COLOR, (left_x, top_y, pixel_width, pixel_height))
+        horizontal_spacing = (pixel_width/game_board.width)
+        vertical_spacing = (pixel_height/game_board.height)
+        for x in range(game_board.width + 1):
+            pygame.draw.line(screen, GRID_COLOR, (left_x, top_y + vertical_spacing * x), (left_x + pixel_width, top_y + vertical_spacing * x), 1)
+        for y in range(game_board.height + 1):
+            pygame.draw.line(screen, GRID_COLOR, (left_x + horizontal_spacing * y, top_y), (left_x + horizontal_spacing * y, top_y + pixel_height), 1)
 
     def do_to_all_tiles(self, func: callable):
         """Applies the given function to every tile on the board."""
